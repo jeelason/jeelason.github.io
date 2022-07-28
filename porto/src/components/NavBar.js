@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
+import logo from "../assets/img/logo1.svg";
+import navIcon1 from "../assets/img/nav-icon4.svg";
 import navIcon2 from "../assets/img/github.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -45,7 +44,7 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("home")}
             >
-              Skills
+              SKILLS
             </Nav.Link>
             <Nav.Link
               href="#projects"
@@ -54,24 +53,23 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              Projects
+              PROJECTS
             </Nav.Link>
-            {/* <Nav.Link
-              href="#contact"
-              className={
-                activeLink === "projects" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("contact")}
-            >
-              Contact
-            </Nav.Link> */}
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/jasonlee220/">
+              <a
+                href="https://www.linkedin.com/in/jasonlee220/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon1} alt="icon1" />
               </a>
-              <a href="https://github.com/jeelason">
+              <a
+                href="https://github.com/jeelason"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={navIcon2} alt="icon2" />
               </a>
             </div>

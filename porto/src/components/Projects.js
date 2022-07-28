@@ -17,11 +17,13 @@ export const Projects = () => {
       title: "Drive Swifty",
       description: "Car dealership Solutions software",
       imgUrl: projImg2,
+      gitHub: "https://github.com/jeelason/drive-swiftly",
     },
     {
       title: "Zah Wines",
       description: "Minimalist Wine Website",
       imgUrl: projImg3,
+      gitHub: "https://github.com/jeelason/zah-wines",
     },
   ];
   return (
@@ -29,36 +31,12 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>more paragraphs here</p>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              {/* <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab One</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                </Nav.Item>
-              </Nav> */}
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => {
-                      return <ProjectCard key={index} {...project} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second"></Tab.Pane>
-                <Tab.Pane eventKey="third"></Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
+            <h2 className="mb-4">PROJECTS</h2>
+            <Row>
+              {projects.map((project, index) => {
+                return <ProjectCard key={index} {...project} />;
+              })}
+            </Row>
           </Col>
         </Row>
       </Container>

@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/* Default CSS */
+/*-*-*-*-*-* Default CSS *-*-*-*-*-*/
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +32,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: #a8e2ba !important;
+  color: #ffffffdc !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -75,17 +75,15 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
-p.success {
-	color: green;
-}
+/*-*-*-*-*-* Navbar CSS *-*-*-*-*-*/
 
-p.danger {
-	color: red;
+nav.navbar img {
+  float: left;
+  width: 107%;
 }
-/* Navbar CSS */
 nav.navbar {
   height:90px;
-  background-color:rgb(43, 100, 78);
+  background-color:#435058;
   position: fixed;
   width: 100%;
   top: 0;
@@ -94,8 +92,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 18px 0;
-  padding: 0px 0;
-  background-color: rgb(43, 100, 78);
+  background-color:#435058;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -146,12 +143,13 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 100%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
+
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+	filter: brightness(0) saturate(100%) invert(30%) sepia(70%) saturate(38%) hue-rotate(146deg) brightness(95%) contrast(86%);
 }
 .navbar-text button {
   font-weight: 700;
@@ -179,7 +177,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #435058;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -233,12 +231,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/* Banner CSS */
+/*-*-*-*-*-* Banner CSS *-*-*-*-*-*/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  /* background-image: url('./assets/img/banner-bg.png'); */
-  background-color: rgb(103, 133, 122);
+  padding: 260px 0 100px 0;  
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -247,13 +243,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(114, 195, 14, 0.5) -5.91%, rgba(219, 195, 202, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, rgba(3, 121, 36, 0.6) -5.91%, rgba(219, 195, 202, 0.6) 111.58%);
+  border: 1px hidden rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
 .banner h1 {
+  color: rgb(59, 58, 58);
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -262,14 +260,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #e7e7e7;
+  color: #4a5155;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #435058;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -304,39 +302,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/* Skills CSS */
+/*-*-*-*-*-* Skills CSS *-*-*-*-*-*/
 .skill {
-  padding: 0 0 50px 0;
-  position: relative;
-  background-color:rgb(103, 133, 122)
+  padding: 10px 0 30px 0;
+  position: relative;  
 }
 .skill-bx {
-  background: #2a4a36;
+
+  background: #435058;
   border-radius: 64px;
   text-align: center;
   padding: 10px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
+  color: #ffffff;
+  letter-spacing: .4rem;
 	font-size: 45px;
 	font-weight: 700;
 }
+
+.skill .icons {  
+  color: #68e790 !important;
+}
+
+.skill .icons:hover {
+  transition-duration: 150ms;
+  transform: scale(1.14)
+}
+
 .skill p {
-    color: #e7e7e7;
+    color: #ffffff;
+    display: inline;
     font-size: 18px;
     letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    line-height: 1.7em;
+    margin: 4px 0 15px 0;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
+
 .background-image-left {
   top: 28%;
   position: absolute;
@@ -345,13 +349,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/* Projects CSS */
+
+
+/*-*-*-*-*-* Projects CSS *-*-*-*-*-*/
 .project {
   padding: 80px 0;
-  position: relative;
-  background-color: rgb(103, 133, 122);
+  position: relative;  
 }
 .project h2 {
+  letter-spacing: .4rem;
+  color: #435058;
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
@@ -365,78 +372,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgba(205, 26, 26, 0.1);
-  overflow: hidden;
-}
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-}
-.project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, rgba(114, 195, 14, 0.5) -5.91%, rgba(219, 195, 202, 0.5) 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
-}
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 55px 0px 0px 55px;
-}
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
-}
-.proj-imgbx {
+
+.proj-imgbox {
   position: relative;
   border-radius: 30px;
+  height: 58%;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 24px; 
 }
-.proj-imgbx::before {
-  content: "";
-  background: linear-gradient(90.21deg, rgba(13, 145, 29, 0.748) 0.91%, rgba(8, 93, 3, 0.587) 111.58%);
-  opacity: 0.85;
+
+.proj-img:hover {
+    -webkit-filter:  blur(2px);
+    filter:  blur(2px) ;
+    transition: .3s ease-in-out;
+  }
+.proj-img::before {
+  content: '';
   position: absolute;
-  width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
   height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: .3s ease-in-out;
 }
-.proj-txtx {
+.proj-img:hover::before {
+  transition: .3s ease-in-out;
+}
+
+.proj-img:hover + h4 {
+  position: absolute;
+  top: 40%;
+  opacity: 1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: .3s ease-in-out;
+}
+
+
+.proj-text {
+  filter: blur(0);
   position: absolute;
   text-align: center;
   top: 65%;
@@ -445,22 +424,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  z-index: 99999;
+
+  
 }
-.proj-imgbx:hover .proj-txtx {
+.proj-imgbox:hover .proj-text {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4 {
+
+
+.proj-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.proj-text a:hover {
+  color:#47d189;
+}
+
+.proj-text h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  z-index: 99999;
 }
-.proj-txtx span {
+.proj-text span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  z-index: 99999;
 }
 .background-image-right {
   top: 20%;
@@ -471,84 +466,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/* Projects CSS */
-/* .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
-}
-.contact img {
-  width: 92%;
-}
-.contact h2 {
-	font-size: 45px;
-	font-weight: 700;
-  margin-bottom: 30px;
-}
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-}
-.contact form button:hover::before {
-  width: 100%;
-} */
-
-/* Footer CSS */
+/*-*-*-*-*-* Footer CSS *-*-*-*-*-*/
 .footer {
   padding: 50px;
  
-  background-color: rgb(43, 100, 78);
-  /* background-image: url('./assets/img/footer-bg.png'); */
+  background-color: #435058;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
