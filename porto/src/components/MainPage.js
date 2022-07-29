@@ -15,14 +15,14 @@ export const MainPage = () => {
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>Hi I'm Jason</h1>
             <p>
-              I am a software engineer who is always curious and strives for
-              efficiency and functionality. Prior to software engineering, I was
-              a winemaker for over a decade and took an interest in web
-              development when I created a website for my wine label. I found
-              myself immersed in software development and have since completed
-              an accelerated coding bootcamp with Hack Reactor in July 2022. I
-              am open to new work opportunities to continue and grow as a
-              software engineer.
+              I am a <strong>full stack software engineer</strong> who is always
+              curious and strives for efficiency and functionality. I was a
+              winemaker for over a decade and took an interest in web
+              development when I created a website for a personal wine label. I
+              found myself immersed in software development and have since
+              completed an accelerated coding bootcamp with Hack Reactor in July
+              2022. I am now open to new work opportunities to continue and grow
+              as a software engineer.
             </p>
             <button onClick={handleEmail}>
               Let's Connect <ArrowRightCircle size={35} />

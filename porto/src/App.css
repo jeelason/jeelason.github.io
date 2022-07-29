@@ -361,18 +361,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #e7e7e7;
-  font-size: 18px;
+  color: #4a5155;
+  font-size: 15px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 100%;
 }
 
 .proj-imgbox {
   position: relative;
-  border-radius: 25px;
+  border-radius: 35px;
   height: 58%;
   overflow: hidden;
   margin-bottom: 25px; 
@@ -420,7 +420,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-text {  
   height: 100%;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 70px;
   border-radius: 15px;
   background-color: rgba(168, 85, 170, 0.2);
   backdrop-filter: blur(3px) brightness(50%);
@@ -432,7 +432,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   opacity: 0;
   width: 100%;
-  z-index: 99999;
+  z-index: 1;;
 
   
 }

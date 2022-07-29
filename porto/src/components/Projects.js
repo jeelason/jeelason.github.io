@@ -11,18 +11,21 @@ export const Projects = () => {
       description: "Full stack custom PC building application",
       imgUrl: projImg1,
       gitHub: "https://github.com/jeelason/great-builds",
+      stack: "React.JS | FastAPI | PostgreSQL",
     },
     {
       title: "Drive Swifty",
       description: "Car dealership Solutions software",
       imgUrl: projImg2,
       gitHub: "https://github.com/jeelason/drive-swiftly",
+      stack: "Python | Django | React.JS | Bootstrap",
     },
     {
       title: "Zah Wines",
       description: "Minimalist Wine Website",
       imgUrl: projImg3,
       gitHub: "https://github.com/jeelason/zah-wines",
+      stack: "Python | Django | HTML | CSS",
     },
   ];
   return (
