@@ -9,7 +9,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "GreatValue Builds",
-      description: "Build computers",
+      description: "Full stack custom PC building application",
       imgUrl: projImg1,
       gitHub: "https://github.com/jeelason/great-builds",
     },
