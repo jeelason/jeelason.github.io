@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo1.svg";
-import navIcon1 from "../assets/img/nav-icon4.svg";
-import navIcon2 from "../assets/img/github.svg";
+import logo from "../assets/img/logo.svg";
+import navIcon1 from "../assets/img/nav-linkedin.svg";
+import navIcon2 from "../assets/img/nav-github.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -28,13 +28,13 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
-        <span className="nav-bar-toggler-icon"></span>
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
@@ -73,7 +73,7 @@ export const NavBar = () => {
                 <img src={navIcon2} alt="icon2" />
               </a>
             </div>
-            <button className="vvd" onClick={handleEmail}>
+            <button onClick={handleEmail}>
               <span>Let's Connect</span>
             </button>
           </span>

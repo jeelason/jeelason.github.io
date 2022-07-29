@@ -19,8 +19,9 @@ export const MainPage = () => {
               efficiency and functionality. Prior to software engineering, I was
               a winemaker for over a decade and took an interest in web
               development when I created a website for my wine label. I found
-              myself immersed in software development and since then went
-              through an intensive coding bootcamp to continue and grow as a
+              myself immersed in software development and have since completed
+              an accelerated coding bootcamp with Hack Reactor in July 2022. I
+              am open to new work opportunities to continue and grow as a
               software engineer.
             </p>
             <button onClick={handleEmail}>

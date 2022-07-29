@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background: linear-gradient(180deg, rgba(168, 226, 186, 0.9) -5.91%, rgba(219, 195, 202, 0.6) 111.58%) !important;
+  background: linear-gradient(180deg, rgba(168, 226, 186, 0.9) -5.91%, rgba(183, 88, 230, 0.392) 111.58%) !important;
   color: #ffffffdc !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -77,12 +77,7 @@ input:focus, textarea:focus, select:focus {
 
 /*-*-*-*-*-* Navbar CSS *-*-*-*-*-*/
 
-nav.navbar img {
-  float: left;
-  width: 107%;
-}
 nav.navbar {
-  height:90px;
   background-color:#435058;
   position: fixed;
   width: 100%;
@@ -91,11 +86,12 @@ nav.navbar {
   transition:  0.32 ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 18px 0;
+  /* padding: 18px 0; */
   background-color:#435058;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 15%;
+    margin: 0 16px 3px 16px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -233,12 +229,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*-*-*-*-*-* Banner CSS *-*-*-*-*-*/
 .banner {
-  margin-top: 0;
   padding: 260px 0 100px 0;  
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -383,9 +379,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 .proj-img:hover {    
-    -webkit-filter:  blur(2px);
-    filter:  blur(2px) ;
-    transition: .3s ease-in-out;
+  -webkit-filter:  blur(2px);
+  filter:  blur(2px) ;
+  transition: .3s ease-in-out;
   }
 .proj-img::before {
   content: '';
@@ -424,13 +420,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   width: 100%;
   padding-top: 80px;
-  backdrop-filter: blur(3px) brightness(10%);
+  border-radius: 15px;
+  background-color: rgba(168, 85, 170, 0.2);
+  backdrop-filter: blur(3px) brightness(50%);
   position: absolute;
   text-align: center;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   opacity: 0;
   width: 100%;
   z-index: 99999;
@@ -470,8 +468,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*-*-*-*-*-* Footer CSS *-*-*-*-*-*/
 .footer {
-  padding: 50px;
- 
+  padding: 50px 0 50px 0;
   background-color: #435058;
   background-position: center;
   background-size: cover;
@@ -490,45 +487,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-
-.article-image{
-  background: inherit;
-  height: 150px;
-  width: 238px;
-  -webkit-filter: grayscale(0) blur(0);
-  filter: grayscale(0) blur(0);
-  transition: .4s ease-in-out;
-}
-
-.ar-image:hover .article-image{
-  -webkit-filter: grayscale(100%) blur(2px);
-  filter: grayscale(100%) blur(2px);
-  transition: .4s ease-in-out;
-}
-
-.ar-image{
-  position: relative;
-  width: 238px;
-  height: 150px;
-}
-
-.ar-image > p{
-  display: none;
-}
-
-.ar-image:hover > p{
-  position: absolute;
-  top: 0;
-  display: block;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: .4s ease-in-out;
-  line-height:150px;
-  margin:0;
-}
 
