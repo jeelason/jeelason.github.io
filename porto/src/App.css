@@ -421,7 +421,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   width: 100%;
   padding-top: 70px;
-  border-radius: 15px;
+  border-radius: 35px;
   background-color: rgba(168, 85, 170, 0.2);
   backdrop-filter: blur(3px) brightness(50%);
   position: absolute;
@@ -432,27 +432,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
   opacity: 0;
   width: 100%;
-  z-index: 1;;
-
-  
+  z-index: 1;  
 }
 
-.proj-text a {
-  color: white;
-  text-decoration: none;
-}
 
-.proj-text a:hover {
+.proj-text h4:hover {
   color:#47d189;
 }
 
 .proj-text h4 {
+  color: white;
+  text-decoration: none;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
 .proj-text span {
+  color: white;
+  text-decoration: none;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
