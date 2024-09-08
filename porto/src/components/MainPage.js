@@ -21,7 +21,7 @@ export const MainPage = () => {
               development when I created a website for a personal wine label. I
               found myself immersed in software development and have since
               completed an accelerated coding bootcamp with Hack Reactor in July
-              2022. I am now open to new work opportunities to continue and grow
+              2022. I am open to network and new work opportunities to continue and grow
               as a software engineer.
             </p>
             <button onClick={handleEmail}>
