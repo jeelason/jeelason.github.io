@@ -30,7 +30,7 @@ export const Footer = () => {
                 <img src={navIcon2} alt="Icon" />
               </a>
             </div>
-            <p>Thanks for stopping by!</p>
+            <p>Thanks for stopping by</p>
           </Col>
         </Row>
       </Container>
