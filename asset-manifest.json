@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.faae78fb.css",
-    "main.js": "/static/js/main.de766494.js",
+    "main.css": "/static/css/main.dd3d00e5.css",
+    "main.js": "/static/js/main.097087f8.js",
     "static/js/787.5242c071.chunk.js": "/static/js/787.5242c071.chunk.js",
-    "static/media/homepage.png": "/static/media/homepage.1d72316819e16619140c.png",
-    "static/media/drive.png": "/static/media/drive.769e76b037d52561578b.png",
-    "static/media/zahwines.png": "/static/media/zahwines.5ef2b4dbd2c3e3bedde1.png",
+    "static/media/homepage.png": "/static/media/homepage.cc99e4578041108b211e.png",
+    "static/media/drive.png": "/static/media/drive.8021ef9fdc94a6fdbdc6.png",
     "static/media/CentraNo2-Bold.ttf": "/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/zahwines.png": "/static/media/zahwines.002b81e3562809fb1ac9.png",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/me.png": "/static/media/me.540029681c8c17798083.png",
-    "static/media/resume.pdf": "/static/media/resume.d080de3571db57bd4952.pdf",
     "static/media/logo.svg": "/static/media/logo.9121de298da268a063efa19ae5e92c5d.svg",
     "index.html": "/index.html",
     "static/media/nav-github.svg": "/static/media/nav-github.3773aa781822cb0159a18b45de14147f.svg",
     "static/media/nav-linkedin.svg": "/static/media/nav-linkedin.0e4b8831e66dae0707eff06b3f737cb3.svg",
-    "main.faae78fb.css.map": "/static/css/main.faae78fb.css.map",
-    "main.de766494.js.map": "/static/js/main.de766494.js.map",
+    "main.dd3d00e5.css.map": "/static/css/main.dd3d00e5.css.map",
+    "main.097087f8.js.map": "/static/js/main.097087f8.js.map",
     "787.5242c071.chunk.js.map": "/static/js/787.5242c071.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.faae78fb.css",
-    "static/js/main.de766494.js"
+    "static/css/main.dd3d00e5.css",
+    "static/js/main.097087f8.js"
   ]
 }
